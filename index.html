@@ -35,7 +35,14 @@
             font-size: 1.5rem;
             font-weight: 700;
             color: #2563eb;
+			display: flex;
+			align-items: center;
+			
         }
+		
+		.logo-image {
+		  margin-right: 10px;  /* Adds some space between the logo and the text */
+		}
 
         .nav-links {
             display: flex;
@@ -144,45 +151,7 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" style="max-width: 300px; height: auto;">
-  <defs>
-    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
-    </linearGradient>
-    
-    <filter id="shadow">
-      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="rgba(0,0,0,0.2)"/>
-    </filter>
-  </defs>
-
-  <!-- Main Symbol -->
-  <g transform="translate(50 50)">
-    <path d="M50 0 L100 25 L100 75 L50 100 L0 75 L0 25 Z" 
-          fill="url(#gradient)" 
-          filter="url(#shadow)"
-          stroke="#fff" 
-          stroke-width="2"/>
-          
-    <!-- Neural Network Pattern -->
-    <path d="M30 30 L70 30 M50 30 L50 70 M30 70 L70 70" 
-          stroke="#fff" 
-          stroke-width="2" 
-          stroke-linecap="round"/>
-          
-    <circle cx="50" cy="50" r="8" fill="#fff"/>
-  </g>
-
-  <!-- Text -->
-  <text x="100" y="160" 
-        text-anchor="middle" 
-        font-family="Inter, sans-serif" 
-        font-size="24" 
-        font-weight="600" 
-        fill="#1f2937">
-    AgentixAI
-  </text>
-</svg></div>
+        <div class="logo"><div class="logo-image" ><img src="logo.png" width="50" height="50" alt="AgentixAI Logo" class="logo"></div> <div>AgentixAI</div></div>
         <div class="nav-links">
             <a href="#features">Features</a>
             <a href="#demo">Demo</a>
